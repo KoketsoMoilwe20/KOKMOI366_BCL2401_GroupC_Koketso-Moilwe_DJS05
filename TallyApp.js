@@ -5,3 +5,10 @@ const initialState = {
 const getState = () => {
     return initialState;
 }
+
+//Defining Action Types
+{ type: 'increment'}
+{ type: 'decrement'}
+
+
+
