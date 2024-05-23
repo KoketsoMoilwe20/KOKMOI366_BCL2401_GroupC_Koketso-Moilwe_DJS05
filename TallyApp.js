@@ -10,5 +10,7 @@ const getState = () => {
 { type: 'increment'}
 { type: 'decrement'}
 
-
+const counter = (state = 0, action) => {
+    switch 
+}
 
