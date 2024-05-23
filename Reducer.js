@@ -1,27 +1,14 @@
-const initialState = {
-    count: 0
-}
+import { getState, dispatch } from "./Store";
+import { add, subtract, reset } from "./Actions";
 
-const reducer = (state = initialState, action) => {
-    switch (action.type)   {
-        case INCREMENT:
-            return {
-                ...state,
-                count: state.count + 1,
-            };
-        case DECREMENT:
-            return {
-                ...state,
-                count: state.count - 1
-            };
-        case RESET:
-            return {
-                ...state,
-                count: 0,
-            };
-        default:
-            return state;
-    }
-}
+console.log("Initial state:", getState()); // Scenario 1
 
-export default reducer;
+dispatch(add());
+dispatch(add());
+console.log("After adding twice:", getState()); // Scenario 2
+
+dispatch(subtract());
+console.log("After subtracting once:", getState()); // Scenario 3
+
+dispatch(reset());
+console.log("After resetting:", getState()); // Scenario 4

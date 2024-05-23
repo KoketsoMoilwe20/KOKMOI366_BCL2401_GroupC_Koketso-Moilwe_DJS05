@@ -1,15 +1,8 @@
-export const INCREMENT = 'INCREMENT';
-export const DECREMENT = 'DECREMENT';
-export const RESET = 'RESET'
+// Action creator for incrementing the count
+export const add = () => ({ type: "ADD" });
 
-export const increment = () => ({
-    type: INCREMENT,
-});
+// Action creator for decrementing the count
+export const subtract = () => ({ type: "SUBTRACT" });
 
-export const decrement = () => ({
-    type: DECREMENT,
-})
-
-export const resetCounter = () => ({
-    type: RESET,
-})
+// Action creator for resetting the count to 0
+export const reset = () => ({ type: "RESET" });
