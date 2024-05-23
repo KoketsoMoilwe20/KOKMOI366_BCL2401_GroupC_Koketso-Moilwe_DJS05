@@ -11,3 +11,9 @@ const decrement = (state) => {
         value: state.value - 1
     }
 }
+
+const resetCounter = (state) => {
+    return {
+        state: 0
+    }
+}
