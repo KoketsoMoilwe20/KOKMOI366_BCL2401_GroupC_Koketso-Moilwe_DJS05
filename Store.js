@@ -1,5 +1,20 @@
 // Initial state of the counter
-const initialState = { count: 0 };
+const initialState = { 
+count: 0 };
+
+//Actions 
+const INCREMENT = 'INCREMENT'
+const DECREMENT = 'DECREMENT'
+const RESET = 'RESET'
+
+// Incrementing the count
+const increment = () => ({ type: INCREMENT });
+
+// Decrementing the count
+const decrement = () => ({ type: DECREMENT });
+
+// Resetting the count to 0
+const reset = () => ({ type: RESET });
 
 // Reducer function to update state based on actions
 const reducer = (state = initialState, action) => {
